@@ -227,6 +227,49 @@ Document your testing with screenshots of:
 
 ## **📸 Screenshots**
 
+1. All products :-
+Method: POST 
+URL: http://localhost:5001/api/products 
+
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/34053fd6-9bca-4dad-9e68-dcdf634a582c" />
+
+
+2. Products category :- Method: GET URL: http://localhost:5001/api/products?category=Smartphones
+
+   <img width="2881" height="1800" alt="image" src="https://github.com/user-attachments/assets/9f977418-b6d7-4a15-a97a-77923b168bf8" />
+
+3. Products Search :- Method: GET URL: http://localhost:5001/api/products?search=iPhone
+
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/83eed8a2-fae8-4bd4-98f4-9f57bb2ff505" />
+
+4. Register User :- Method: POST URL: http://localhost:5001/api/auth/register
+
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/eed3274b-5641-4f1d-a0a1-8ad9b925c662" />
+
+5. Login(If Already Registered) :- Method: POST URL: http://localhost:5001/api/auth/login
+
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/97df01d0-9d9b-4f16-8223-b119d8e3a217" />
+
+6. Cart before loging Method: POST URL: http://localhost:5001/api/cart/items
+
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/b1029b35-4b1b-4f72-a903-7ccd73298bb3" />
+
+7. Cart after login Method: POST URL: http://localhost:5001/api/cart/items
+
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/86b84a87-f351-4c0a-a2b9-0ecdbc83c6ed" />
+
+
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/852b2113-fa2a-48ba-a551-886226f075d6" />
+
+
+
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/333aaa06-9973-4958-b92e-78290cdc3adb" />
+
+
+
+
+
+
 
 
 ### **Application Views**
