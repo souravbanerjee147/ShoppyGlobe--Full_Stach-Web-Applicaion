@@ -1,0 +1,245 @@
+.not-found {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+}
+
+.error-container {
+  max-width: 1200px;
+  width: 100%;
+  background: var(--card-bg);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px var(--shadow-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 500px;
+  border: 1px solid var(--border-color);
+}
+
+.error-content {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.error-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.5;
+}
+
+.error-code {
+  font-size: 6rem;
+  font-weight: 900;
+  margin: 0;
+  background: var(--button-bg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+.error-title {
+  font-size: 2.5rem;
+  margin: 1rem 0 1.5rem 0;
+  color: var(--text-primary);
+}
+
+.error-message {
+  margin-bottom: 2.5rem;
+}
+
+.error-message p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.error-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.error-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  background: var(--bg-secondary);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text-primary);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.error-link:hover {
+  background: var(--button-bg);
+  color: white;
+  border-color: var(--button-bg);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+.link-icon {
+  font-size: 2rem;
+}
+
+.error-search {
+  margin-bottom: 2rem;
+}
+
+.error-search p {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.search-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.9rem 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--button-bg);
+}
+
+.search-btn {
+  padding: 0.9rem 1.5rem;
+  background: var(--button-bg);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  background: var(--button-hover);
+  transform: translateY(-2px);
+}
+
+.error-contact {
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--border-color);
+}
+
+.error-contact p {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.contact-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  background: linear-gradient(135deg, #45a049 0%, #3d8b40 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+}
+
+.error-illustration {
+  background: linear-gradient(135deg, var(--button-bg) 0%, var(--button-hover) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.illustration {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.cart-icon {
+  position: absolute;
+  font-size: 8rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+}
+
+.question-mark {
+  position: absolute;
+  font-size: 10rem;
+  font-weight: 900;
+  top: 10%;
+  right: 10%;
+  opacity: 0.3;
+}
+
+@media (max-width: 992px) {
+  .error-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .error-illustration {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .not-found {
+    padding: 1rem;
+  }
+  
+  .error-content {
+    padding: 2rem;
+  }
+  
+  .error-code {
+    font-size: 4rem;
+  }
+  
+  .error-title {
+    font-size: 2rem;
+  }
+  
+  .error-links {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .error-content {
+    padding: 1.5rem;
+  }
+  
+  .search-container {
+    flex-direction: column;
+  }
+}
