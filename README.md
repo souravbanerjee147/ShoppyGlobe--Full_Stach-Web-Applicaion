@@ -69,7 +69,13 @@ cd backend
 npm install
 
 # Configure environment variables
-cp .env.example .env
+cat > .env.example << 'EOF'
+# Copy this file to .env and fill in your values
+PORT=5000
+MONGODB_URI=your_mongodb_connection_string_here
+JWT_SECRET=your_super_secret_key_here
+NODE_ENV=development
+EOF
 # Edit .env with your MongoDB credentials
 
 # Seed the database
